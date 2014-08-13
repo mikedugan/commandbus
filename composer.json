@@ -1,0 +1,12 @@
+{
+    "name": "mikedugan/commandbus",
+    "description": "framework agnostic PHP 5.4+ CommandBus implementation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mikedugan",
+            "email": "mike@mjdugan.com"
+        }
+    ],
+    "require": {}
+}
