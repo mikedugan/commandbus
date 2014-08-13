@@ -59,7 +59,10 @@ When you create your handler, they should implement Mikedugan\Commandbus\Contrac
 If you are using the ValidationCommandBus, you will want to also have a validator available to handle this. It should implement the CommandValidator class:
 
     class MyCommandValidator implementes Mikedugan\Commandbus\Contracts\CommandValidator {
-        //do validation
+        public function validate(CommandRequest $command)
+        {
+            //do validation
+        }
         
         //if validation passes, return false
     }
