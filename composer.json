@@ -8,5 +8,10 @@
             "email": "mike@mjdugan.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Commandbus\\": "src/"
+        }
+    },
     "require": {}
 }

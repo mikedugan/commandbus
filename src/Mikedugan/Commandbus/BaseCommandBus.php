@@ -1,6 +1,6 @@
-<?php  namespace Mikedugan\Commandbus;
+<?php namespace Commandbus;
 
-use Mikedugan\Commandbus\Contracts\CommandTranslator as TranslatorInterface;
+use Commandbus\Contracts\CommandTranslator as TranslatorInterface;
 
 class BaseCommandBus {
 

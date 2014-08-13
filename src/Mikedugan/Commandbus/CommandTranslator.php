@@ -1,4 +1,4 @@
-<?php  namespace Mikedugan\Commandbus;
+<?php namespace Commandbus;
 
 class CommandTranslator {
 

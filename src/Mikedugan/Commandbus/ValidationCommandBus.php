@@ -1,7 +1,7 @@
-<?php  namespace Mikedugan\Commandbus;
+<?php namespace Commandbus;
 
-use Mikedugan\Commandbus\Contracts\CommandBus;
-use Mikedugan\Commandbus\Contracts\CommandTranslator as TranslatorInterface;
+use Commandbus\Contracts\CommandBus;
+use Commandbus\Contracts\CommandTranslator as TranslatorInterface;
 
 class ValidationCommandBus implements CommandBus {
 

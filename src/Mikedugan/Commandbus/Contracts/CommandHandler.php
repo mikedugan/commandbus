@@ -1,4 +1,4 @@
-<?php  namespace Mikedugan\Commandbus\Contracts;
+<?php namespace Commandbus\Contracts;
 
 interface CommandHandler
 {
