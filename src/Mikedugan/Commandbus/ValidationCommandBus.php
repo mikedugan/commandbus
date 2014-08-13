@@ -1,6 +1,7 @@
 <?php  namespace Mikedugan\Commandbus;
 
 use Mikedugan\Commandbus\Contracts\CommandBus;
+use Mikedugan\Commandbus\Contracts\CommandTranslator as TranslatorInterface;
 
 class ValidationCommandBus implements CommandBus {
 
@@ -8,10 +9,10 @@ class ValidationCommandBus implements CommandBus {
 
     private $commandTranslator;
 
-    function __construct()
+    function __construct(TranslatorInterface $commandTranslator = null)
     {
         $this->commandBus = new BaseCommandBus();
-        $this->commandTranslator = new CommandTranslator();
+        $this->commandTranslator = $commandTranslator ? $commandTranslator : new CommandTranslator();
     }
 
     public function execute($command)
